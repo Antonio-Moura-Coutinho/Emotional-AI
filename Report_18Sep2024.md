@@ -14,7 +14,6 @@
 6. PATIENT-Ψ: Using Large Language Models to Simulate Patients for Training Mental Health ProfessionalsPatient phi
 7. Social Skill Training with Large Language Models - Diyi Yang ...
 8. Marteen Sap
-9. Liu Zixi
 
 ### [Social skill training with large language models](h
 
