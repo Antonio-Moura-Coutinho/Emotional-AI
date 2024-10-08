@@ -15,12 +15,6 @@
 7. Social Skill Training with Large Language Models - Diyi Yang ...
 8. Marteen Sap
 
-### [Social skill training with large language models](h
-
-*
-
-### [Social skill training with large language models](h
-
 ```
 Survey - what I learn from my 
 ```
