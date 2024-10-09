@@ -9,20 +9,13 @@
       1. emotion support
       2. conflict resolution
       3. simulations
-4. SOTOPIA: INTERACTIVE EVALUATION FOR SOCIAL INTELLIGENCE IN LANGUAGE AGENTS
-5. SOTOPIA-π: Interactive Learning of Socially Intelligent Language Agents
-6. PATIENT-Ψ: Using Large Language Models to Simulate Patients for Training Mental Health ProfessionalsPatient phi
-7. Social Skill Training with Large Language Models - Diyi Yang ...
-8. Marteen Sap
-9. Liu Zixi
-
-### [Social skill training with large language models](h
-
-### [Social skill training with large language models](h
-
-```
-Survey - what I learn from my 
-```
+4. Relevant names ( Diyi Yang, Maarten Sap)
+5. The Good, The Bad, and Why: Unveiling Emotions in Generative A
+6. SOTOPIA: INTERACTIVE EVALUATION FOR SOCIAL INTELLIGENCE IN LANGUAGE AGENTS
+7. SOTOPIA-π: Interactive Learning of Socially Intelligent Language Agents
+8. PATIENT-Ψ: Using Large Language Models to Simulate Patients for Training Mental Health ProfessionalsPatient phi
+9. Social Skill Training with Large Language Models -
+10. Rehearsal: Simulating Conflict to Teach Conflict Resolution
 
 ## Papers
 
@@ -249,4 +242,22 @@ Key Concepts:
     * III ) creating an AI mentor to provide tailored feedback;
     * IV ) integrating the two agents into a simulated environment for users to learn safely.AI Partner
   * ![1728456370780](images/Report_18Sep2024/1728456370780.png)
-  * w
+
+[Rehearsal: Simulating Conflict to Teach Conflict Resolution](https://https://arxiv.org/pdf/2309.12309)
+
+* Interpersonal conflict is an uncomfortable but unavoidable fact of life.
+* Rehearsal, is a system that allows users to rehearse conflicts with a believable simulated interlocutor, explore counterfactual “what if?” scenarios to identify alternative conversational paths, and learn through feedback on how and when to apply specific conflict strategies.
+* Users can utilize Rehearsal to practice handling a variety of predefined conflict scenarios, from office disputes to relationship issues, or they can choose to create their own setting.
+* To enable Rehearsal, they develop IRP prompting, a method of conditioning output of a large language model on the influential Interest-Rights-Power (IRP) theory from conflict resolution.
+* Rehearsal uses IRP to generate utterances grounded in conflict resolution theory, guiding users towards counterfactual conflict resolution strategies that help de-escalate difficult conversations.
+* In a between-subjects evaluation, 40 participants engaged in an actual conflict with a confederate after training. Compared to a control group with lecture material covering the same IRP theory, participants with simulated training from Rehearsal significantly improved their performance in the unaided conflict: they reduced their use of escalating competitive strategies by an average of 67%, while doubling their use of co- operative strategies.
+* Overall, Rehearsal highlights the potential effectiveness of language models as tools for learning and practicing interpersonal skills.
+* **Key Concepts**
+  * Rehearsal: an interactive system for roleplaying conflict resolution. In a simulated conflict roleplay, Rehearsal generates feedback and lets people send/evaluate their messages in a roleplay. Furthermore, Rehearsal enables learning from alternative conflict resolution strategies.
+  * IRP Prompting: a prompting technique for producing conflict faithful to expert training by grounding LLM generations to conflict resolution theory. IRP prompting also supports generating alternative messages (that use a different conflict resolution strategy), enabling Rehearsal’s interactions.
+  * An evaluation of IRP prompting and a user study of Rehearsal with 𝑁 = 40 participants. Their studies highlight Rehearsal’s significant effectiveness in applying conflict resolution strategies, compared to the status quo of teaching the same material.
+  * Conflict should move towards a cooperative state, where all parties discuss common goals and interests
+  * Conflicts also have a tendency to spiral out of control, especially when contentious resolution strategies are repeatedly used . Understanding when and why a specific conflict resolution strategy is used can significantly improve the outcome of a conversation.
+  *
+* ![1728458810781](images/Report_18Sep2024/1728458810781.png)
+* ![1728460867222](images/Report_18Sep2024/1728460867222.png)
