@@ -14,6 +14,11 @@
 6. PATIENT-Ψ: Using Large Language Models to Simulate Patients for Training Mental Health ProfessionalsPatient phi
 7. Social Skill Training with Large Language Models - Diyi Yang ...
 8. Marteen Sap
+9. Liu Zixi
+
+### [Social skill training with large language models](h
+
+### [Social skill training with large language models](h
 
 ```
 Survey - what I learn from my 
@@ -232,4 +237,16 @@ Key Concepts:
 
 ### [Social skill training with large language models](https://arxiv.org/abs/2404.04204)
 
-*
+* They present a solution that leverages large language models for social skill training via a generic framework.
+* The AI Partner, AI Mentor framework merges experiential learning with realistic practice and tailored feedback. This work ultimately calls for cross-disciplinary innovation to address the broader implications for workforce development and social equality.
+* They propose a generic framework for social skill training with an AI Partner and an AI Mentor (APAM). Both are critical. When a user wants to learn a new social skill, the AI Partner can help them practice a relevant scenario with simulated conversation. The AI Mentor can provide knowledge-grounded feedback at critical junctures of the simulation.
+* ![1728456111250](images/Report_18Sep2024/1728456111250.png)
+* **Key Concepts**
+  * A generic methodology for Social Skill Training via LLMs in four steps:
+
+    * I ) understanding the social processes that underlie one’s desired skill (e.g., conflict resolution);
+    * II ) designing an AI partner to simulate conversations that expose the learner to the target processes, allowing the learner to practice;
+    * III ) creating an AI mentor to provide tailored feedback;
+    * IV ) integrating the two agents into a simulated environment for users to learn safely.AI Partner
+  * ![1728456370780](images/Report_18Sep2024/1728456370780.png)
+  * w
