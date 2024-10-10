@@ -105,4 +105,9 @@
 *
 *
 * [Self-Alignment of Large Language Models via Monopolylogue-based Social Scene Simulation](https://https://arxiv.org/pdf/2402.05699)
-*
+
+  * MATRIX, a novel social scene simulator that emulates realistic scenes around a user’s input query, enabling the LLM to take social consequences into account before responding.
+  * MATRIX serves as a virtual rehearsal space, akin to a Monopolylogue, where the LLM performs diverse roles related to the query and practice by itself. To inject this alignment, we fine-tune the LLM with MATRIX- simulated data, ensuring adherence to human values without compromising inference speed.
+  * They theoretically show that the LLM with MATRIX outperforms Constitutional AI under mild assumptions.
+  * Finally, extensive experiments validate that their method outperforms over 10 baselines across 4 benchmarks. As evidenced by 875 user ratings, their tuned 13B-size LLM exceeds GPT-4 in aligning with human values. See our project page at https://shuotang123.github.io/MATRIX.
+  *
