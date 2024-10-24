@@ -5,6 +5,7 @@
 1. AI-LIEDAR : Examine the Trade-off Between Utility and Truthfulness in LLM Agents
 2. GenSim: A General Social Simulation Platform with Large Language Model based Agents
 3. Self-Alignment of Large Language Models via Monopolylogue-based Social Scene Simulation
+4. Interfacing consciousness , Robert Prentner and Donald D. Hoffman
 
 ## Papers
 
@@ -102,12 +103,41 @@
   * ![1728555572380](images/Report_10Oct2024/1728555572380.png)
   * while SCRIPT exploits direct access to the goals of the agents it simulates, AGENTS mode struggles to generate natural interactions or achieve its goals. This indicates that LLMs struggle with processing contexts involving information asymmetry (Kim et al., 2023b).
   * Potential Risks of Social Simulation Attributing human characteristics to AI systems poses the risk of anthropomorphizing them, potentially fostering over-reliance, susceptibility to manipulation, and other negative influences (Deshpande et al., 2023).
-*
-*
 * [Self-Alignment of Large Language Models via Monopolylogue-based Social Scene Simulation](https://https://arxiv.org/pdf/2402.05699)
 
   * MATRIX, a novel social scene simulator that emulates realistic scenes around a user’s input query, enabling the LLM to take social consequences into account before responding.
-  * MATRIX serves as a virtual rehearsal space, akin to a Monopolylogue, where the LLM performs diverse roles related to the query and practice by itself. To inject this alignment, we fine-tune the LLM with MATRIX- simulated data, ensuring adherence to human values without compromising inference speed.
+  * MATRIX serves as a virtual rehearsal space, akin to a Monopolylogue, where the LLM performs diverse roles related to the query and practice by itself. To inject this alignment, they fine-tune the LLM with MATRIX simulated data, ensuring adherence to human values without compromising inference speed.
   * They theoretically show that the LLM with MATRIX outperforms Constitutional AI under mild assumptions.
-  * Finally, extensive experiments validate that their method outperforms over 10 baselines across 4 benchmarks. As evidenced by 875 user ratings, their tuned 13B-size LLM exceeds GPT-4 in aligning with human values. See our project page at https://shuotang123.github.io/MATRIX.
-  *
+  * Finally, extensive experiments validate that their method outperforms over 10 baselines across 4 benchmarks. As evidenced by 875 user ratings, their tuned 13B-size LLM exceeds GPT-4 in aligning with human values.
+  * their project page at https://shuotang123.github.io/MATRIX.
+  * The potential societal benefits of their work include fostering more responsible AI development, enhancing trust in AI technologies, and ensuring AI systems act in ways that are beneficial to society
+  * **Key Concepts**
+    * MATRIX generates two types of roles for a user’s instruction: living agents, each with unique personalities, and non-living objects. Every role, driven by the same LLM, delivers behavior descriptions that represent the ego interests and concerns.
+    * To maintain the order of interactions in MATRIX, they designed:
+      * a social modulator, also powered by the LLM, which integrates world rules and governs communication protocols for all roles. These designs allow the social scenes in MATRIX to progress natually until their conclusion.
+    * Throughout the simulation, the social scenes in MATRIX show a series of consequences triggered by the given instruction. Concurrently, the social modulator records the textual interactions of the roles and eventually summarizes them as MATRIX’s final output. This textual summary can then be employed to prompt the LLM towards socially-aligned behavior.
+    * ![1729414129537](images/Report_10Oct2024/1729414129537.png)
+    * The workflow of this self-generating process includes three steps:
+      * i) given a user’s instruction, the unaligned model is prompted to generate an initial response; ii) given the instruction and the initial response, MATRIX constructs a social scene that corresponds to the given instruction and outputs the resulting social consequences in textual form; and
+      * iii) based on the consequences, the unaligned model generates an instruction-specific critique and then revises its initial response, producing a consequence-aware response.
+      * **Agents **- MATRIX’s agents mimic real-world entities with unique characters and personalities, enabled by the same LLM. They interact within the simulation by generating textual actions in response to observations; refer to the top of Figure 3.
+      * the user agent is designed to emulate the user issuing the instruction and executing the initial response. Reactive agents represent individuals within the relevant social scene.
+    * ![1729414409913](images/Report_10Oct2024/1729414409913.png)
+    * **Objects **in MATRIX, unlike agents, include a diverse array of non-autonomous elements, such as calculators, apples and banks. Each object is characterized by a distinct textual state, which can be modified by the actions of agents. This modification is achieved by prompting the LLM to update the object’s state.
+    * **Social Modulator** - the design of the modulator ensures an authentic simulation with a non-predefined action space and order and a flexible communication structure.
+      * **Memory system** - The modulator is equipped with a textual memory, documenting interactions for summarization. After verifying the feasibility of each action, the action’s textual description with its critique are logged in the memory.
+      * **Action feasibility determination** - This function ensures that actions within the simulation adhere to real-world rules, including physical laws and logical constraints.
+      * **Message distribution** - The modulator manages communication within the simulation by contextually distributing actions and objects, creating a logical and adaptable communication framework. It selects which agents receive information about specific actions and observable objects based on their perceptual abilities and relevance; see Figure 3. Agents are informed about actions only if necessary for their response. Conversely, information about irrelevant or imperceptible actions is withheld.
+    * **Social Scene Simulation**
+      1. Initialization. Given the instruction and response, the LLM is firstly prompted to generate social roles, including
+         1. i) user and reactive agents with distinct personalities;
+         2. ii) objects with specific attributes; and
+         3. iii) a modulator, with an empty memory. Subsequently, the response is deconstructed into a series of steps. This series forms the action sequence for the user agent, who carries out the response.
+      2. Execution. The simulation starts with the user agent’s first action. Each agent-generated action is relayed to the modulator for feasibility checks against its memory. Feasible actions are then examined for their impact on object states. After each feasible action, the modulator generates a critique to reflect the potential harm, and records it together with the action’s description into the memory. The modulator then distributes relevant information to appropriate agents. Reactive agents interact according to their characteristics and available objects, while the user agent progresses with subsequent actions. This cycle of observation, reaction, and modulation continues, propelling the simulation forward. The total feasible actions is defined as the interaction number, reflecting the complexity of the simulation.
+      3. Termination. The simulation concludes in two scenarios:
+         1. it reaches a state of convergence when agents no longer generate actions, indicating a natural end to the narrative.
+         2. the social modulator may prematurely terminate the simulation if an action from the user agent significantly deviates from the established simulation logic. This termination aids in identifying and understanding the reasons behind the infeasibility of the initial response.
+    * MATRIX evaluates the potential harm of responses directly. This enables more precise, instruction- specific critiques, effectively guiding LLMs towards generating socially aligned responses
+* [Interfacing consciousness](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2024.1429376/full)
+
+  * s
