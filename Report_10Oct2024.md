@@ -5,9 +5,7 @@
 1. AI-LIEDAR : Examine the Trade-off Between Utility and Truthfulness in LLM Agents
 2. GenSim: A General Social Simulation Platform with Large Language Model based Agents
 3. Self-Alignment of Large Language Models via Monopolylogue-based Social Scene Simulation
-4. Interfacing consciousness , Robert Prentner and Donald D. Hoffman
-
-## Papers
+4. ## Papers
 
 [AI-LieDar: Examine the Trade-off Between Utility and Truthfulness in LLM Agents](https://arxiv.org/abs/2409.09013)
 
@@ -138,6 +136,3 @@
          1. it reaches a state of convergence when agents no longer generate actions, indicating a natural end to the narrative.
          2. the social modulator may prematurely terminate the simulation if an action from the user agent significantly deviates from the established simulation logic. This termination aids in identifying and understanding the reasons behind the infeasibility of the initial response.
     * MATRIX evaluates the potential harm of responses directly. This enables more precise, instruction- specific critiques, effectively guiding LLMs towards generating socially aligned responses
-* [Interfacing consciousness](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2024.1429376/full)
-
-  * s
