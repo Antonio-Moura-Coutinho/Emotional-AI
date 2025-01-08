@@ -32,8 +32,6 @@ To power social simulacra, they contribute techniques for prompting a large lang
 
 ![1733904590363](images/Report_11Dec2024/1733904590363.png)
 
-
-
 ![1733904539566](images/Report_11Dec2024/1733904539566.png)
 
 #### Good Parts
@@ -49,11 +47,7 @@ To power social simulacra, they contribute techniques for prompting a large lang
 * SimReddit is currently text-only; however,  it could be expanded with multi-modal generative models  opening up the types of content generated to include even multimodal posts (e.g., text and video) that are common on most social platforms today.
 * They used gpt-3 in english only but future work could actively try to leverage new models to help designers bridge cultural gaps and improve the results.
 
-
-
-
 ### [VOYAGER: An Open-Ended Embodied Agent with Large Language Models](https://arxiv.org/pdf/2305.16291)
-
 
 VOYAGER, was the first LLM-powered embodied lifelong learning agent in Minecraft that continuously explores the world, acquires diverse skills, and makes novel discoveries without human intervention.
 
@@ -73,10 +67,7 @@ VOYAGER is able to utilize the learned skill library in a new Minecraft world to
 
 ![1733906586073](images/Report_11Dec2024/1733906586073.png)
 
-
 ![1733906607265](images/Report_11Dec2024/1733906607265.png)
-
-
 
 ![1733906620532](images/Report_11Dec2024/1733906620532.png)
 
@@ -100,7 +91,6 @@ Significant advancements have occurred in the application of Large Language Mode
 ![1733915670597](images/Report_11Dec2024/1733915670597.png)
 
 ![1733916313678](images/Report_11Dec2024/1733916313678.png)
-
 
 #### Good Points
 
